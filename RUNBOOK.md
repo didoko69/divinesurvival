@@ -11,8 +11,15 @@ Owner: Daniel. He does NOT review before posting — quality gate is you. If any
 5. `bash tools/make.sh <ep>` (~30–40 min). Then extract 6 frames from out/<ep>/video.mp4 with ffmpeg and look at them, and check duration 6.5–11 min.
 6. Write `episodes/<ep>/package.json`: {"title","description","tags":[...],"pinned_comment"}. Title pattern "Zombie Outbreak: <hook> | S1E2". Description: 2-line hook, chapters, "New episodes Mon/Wed/Fri", 3 hashtags. Tags 12–18 (zombie outbreak survival, zombie apocalypse survival, zombie survival story, zombie outbreak 30 days, 30 days trapped, animated survival story, stick figure animation, divine survival …).
 7. Commit episodes/<ep>/ and push to main.
-8. Host files: `gh release create <ep> out/<ep>/video.mp4 out/<ep>/thumbnail.jpg --repo didoko69/divinesurvival --title "<title>" --notes "auto"`.
-   URLs: https://github.com/didoko69/divinesurvival/releases/download/<ep>/video.mp4 and …/thumbnail.jpg
+8. Host files (GitHub releases are blocked for these sessions — use the orphan `media` branch, replaced every run so the repo stays small):
+   ```
+   rm -rf /home/claude/media && mkdir /home/claude/media && cd /home/claude/media && git init -q -b media
+   cp /home/claude/divinesurvival/out/<ep>/video.mp4 /home/claude/divinesurvival/out/<ep>/thumbnail.jpg .
+   git add -A && git -c user.name=Claude -c user.email=noreply@anthropic.com commit -qm "media <ep>"
+   git remote add origin https://github.com/didoko69/divinesurvival && git push -q -f origin media
+   curl -sI https://raw.githubusercontent.com/didoko69/divinesurvival/media/video.mp4 | head -1   # must be 200 (wait ~10 s if 404)
+   ```
+   URLs: https://raw.githubusercontent.com/didoko69/divinesurvival/media/video.mp4 and …/media/thumbnail.jpg  (video must stay < 95 MB)
 9. Upload with Zapier (YouTube app, action upload_video, tool_name youtube_upload_video): title, description, video=<video URL>, thumbnail=<thumb URL>,
    tags, privacy_status "public", category_id "1" (Film & Animation), made_for_kids "false", default_language "en", notify_subscribers "true".
    If the thumbnail did not apply, use action upload_video_thumbnail with the returned video id.
