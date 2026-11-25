@@ -27,7 +27,7 @@ Season mystery: who is signalling from the water tower, and why does the militar
 | Ep | Title | Status |
 |----|-------|--------|
 | S1E1 | Zombie Outbreak: 30 Days Trapped On A Bridge | POSTED 2026-11-23 |
-| S1E2 | Zombie Outbreak: I Survived 30 Days In A Water Tower | RENDERING 2026-11-25 |
+| S1E2 | Zombie Outbreak: I Survived 30 Days In A Water Tower | POSTED 2026-11-25 |
 | S1E3 | Zombie Outbreak: Nobody Answered The Ferry Horn | planned |
 | S1E4 | Zombie Outbreak: 30 Days In A Flooded Subway | planned |
 | S1E5 | Zombie Outbreak: The Hospital Where It Started | planned |
