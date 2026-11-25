@@ -27,7 +27,7 @@ Season mystery: who is signalling from the water tower, and why does the militar
 | Ep | Title | Status |
 |----|-------|--------|
 | S1E1 | Zombie Outbreak: 30 Days Trapped On A Bridge | POSTED 2026-11-23 |
-| S1E2 | Zombie Outbreak: I Survived 30 Days In A Water Tower | planned |
+| S1E2 | Zombie Outbreak: I Survived 30 Days In A Water Tower | RENDERING 2026-11-25 |
 | S1E3 | Zombie Outbreak: Nobody Answered The Ferry Horn | planned |
 | S1E4 | Zombie Outbreak: 30 Days In A Flooded Subway | planned |
 | S1E5 | Zombie Outbreak: The Hospital Where It Started | planned |
@@ -36,5 +36,13 @@ Season mystery: who is signalling from the water tower, and why does the militar
 Planned beats (adapt freely, but keep continuity):
 - S1E2 (Day 31–60): You and Walter jump as the bridge falls; Walter hurts his leg. You reach the water tower on the WEST bank. The signaller is NORA (30s, radio engineer, glasses, yellow raincoat). The tank holds ~200,000 L of water — enough, but the ladder is the only way up and the infected learn to gather under it. Mystery: Nora's radio log mentions a second survivor group that answers only with a ferry horn. Cliffhanger: day 60, a ferry horn sounds three times from the harbor.
 - S1E3 (Day 61–90): Raft/boat trip to the harbor; abandoned ferry; supplies on board; the horn was automatic — or was it? Cliffhanger: a child's drawing of the water tower in the ferry cabin.
+  Continuity from S1E2 as made: Walter's ankle is broken (splinted, can't climb); the top 3 m ladder section was unbolted and is lying on the catwalk (no way down → they must build a rope). Food is at zero on day 60. Water = 200,000 L tank + bleach rule. Rules so far: 1) 2 drops bleach/L, 30 min; 2) down at noon, up by 12:20, never after dark; 3) never cut the ladder. Nora's radio log: day 3 military "East bank asset must NOT cross the river" (season mystery thread); ferry horn 3 blasts on day 12 and day 19 (reply to her ch.16 call), silence after day 25; day 60 horn 3 short blasts = "my engines are going astern" (a ship leaving). Nora flashed W-A-I-T, no answer. Harbor is ~3.2 km from the tower. Infected: ~300 under the ladder, now able to climb a few rungs.
 - S1E4–S1E6: decide when you get there; keep the mystery threads alive, pay off the military secret in S1E6.
 When Season 1 ends, start Season 2 with a fresh location and premise (check PERFORMANCE.md for what worked).
+
+## Thumbnail rules (every episode — tools/thumb.py v2)
+- Dedicated engine render, never a video frame. 1280x720 JPEG < 2 MB. Channel look: dark desaturated night scene, YOU large on the left with a warm rim glow and a fear face, threat on the right partly hidden in black with RED glowing eyes, yellow Anton headline top-right with thick black stroke, optional white second line.
+- 2–4 words total, never the title (e.g. "THEY CLIMB / DAY 60"). Max 3 elements: hero, threat, text. Optional red arrow/circle on the key detail.
+- Bottom ~30% fades to black: nothing important in the bottom-right corner (timestamp).
+- Always check the 320x180 preview (work/<ep>/thumb_320.jpg) before upload; redo if face, threat or text is unclear.
+- Save design notes in episodes/<ep>/thumbnail.md. Update these rules from PERFORMANCE.md (CTR) learnings.

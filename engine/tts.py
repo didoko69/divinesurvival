@@ -2,7 +2,7 @@ import soundfile as sf, re, os
 from kokoro_onnx import Kokoro
 exec(open('shots.py').read())
 k=Kokoro('../tts/kokoro.onnx','../tts/voices.bin')
-V_={'nar':('am_michael',.95,'en-us'),'walt':('bm_george',.9,'en-gb'),'radio':('am_onyx',.95,'en-us')}
+V_={'nar':('am_michael',.95,'en-us'),'walt':('bm_george',.9,'en-gb'),'radio':('am_onyx',.95,'en-us'),'nora':('af_sarah',.95,'en-us')}
 def prep(t):
     return t.replace('’',"'").replace('‘',"'").replace('“','').replace('”','').replace('…','...').replace('J. U. M. P.','J... U... M... P.')
 os.makedirs('vo',exist_ok=True)

@@ -459,6 +459,16 @@ for s0 in TL:
             if k0 * 3.1 >= a and rnd_py(k0) > .35: thunder(k0 * 3.1 + .35, .6)
             k0 += 1
     if au.get('thunder'): thunder(a + .3, .7 * au['thunder'])
+    if au.get('horn'):  # ship/ferry horn blasts: au['horn']=count (int), long low chord with distant reverb
+        nb = int(au['horn']); k = a + .4
+        for j in range(nb):
+            d = seg(1.6); env = np.clip(d / .12, 0, 1) * np.clip((1.6 - d) / .3, 0, 1)
+            x = sum(np.sign(np.sin(2 * np.pi * f * d)) * g for f, g in ((92, 1), (138, .7), (184, .35))).astype(np.float32)
+            x = filt(x, 60, 900) * env * .5; add(sfx, k, reverb(x.astype(np.float32), 3.5, .55)); k += 2.3
+    if au.get('bigsplash'):
+        d = seg(2.2); add(sfx, a + .25, filt(noise(len(d)), 80, 2500) * np.exp(-d * 2.2) * 1.0)
+    if au.get('explode'):
+        d = seg(4.0); add(sfx, a + .2, (filt(noise(len(d)), 20, 400) * np.exp(-d * 1.1) * 1.4 + filt(noise(len(d)), 400, 3000) * np.exp(-d * 4) * .4).astype(np.float32))
     if au.get('splash'):
         d = seg(1.2); add(sfx, a + .2, filt(noise(len(d)), 200, 4000) * np.exp(-d * 3.5) * .6)
     if au.get('tapping'):
@@ -531,6 +541,8 @@ for i, s in enumerate(TL):
         v = reverb(v, 1.6, .3)
     if kind == 'radio2':
         v = filt(v, 300, 3400) * 1.4; v = np.tanh(v * 1.8) / 1.6; v = v + filt(noise(len(v)), 1000, 5000) * .012
+    if kind == 'nora':
+        v = reverb(v, .9, .15) * 1.05
     if kind == 'walt':
         v = reverb(v, .9, .15) * 1.05
     if kind == 'drv':
