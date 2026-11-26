@@ -9,7 +9,7 @@ Owner: Daniel. He does NOT review before posting — quality gate is you. If any
    `thumb_shots.json` (shot 0 = inset scene, shot 1 = main scene with the characters big; see episodes/s1e1). New locations → `ep.js`.
 4. Copy engine into work dir and run the mandatory frame check (ENGINE.md). Fix problems.
 5. `bash tools/make.sh <ep>` (~30–40 min). Then extract 6 frames from out/<ep>/video.mp4 with ffmpeg and look at them, and check duration 6.5–11 min.
-5b. THUMBNAIL: follow THUMBNAILS.md (AI-illustrated with Zapier Gemini generate_image; tools/thumb.py output only as fallback). Save the prompt you used in episodes/<ep>/thumbnail.md.
+5b. THUMBNAIL: follow THUMBNAILS.md — write episodes/<ep>/pro_thumb.json and run `python3 tools/pro_thumb.py <ep>` after make.sh (it overwrites out/<ep>/thumbnail.jpg). Check it full size and at 320x180. Save notes in episodes/<ep>/thumbnail.md.
 6. Write `episodes/<ep>/package.json`: {"title","description","tags":[...],"pinned_comment"}. Title pattern "Zombie Outbreak: <hook> | S1E2". Description: 2-line hook, chapters, "New episodes Mon/Wed/Fri", 3 hashtags. Tags 12–18 (zombie outbreak survival, zombie apocalypse survival, zombie survival story, zombie outbreak 30 days, 30 days trapped, animated survival story, stick figure animation, divine survival …).
 7. Commit episodes/<ep>/ and push to main.
 8. Host files (GitHub releases are blocked for these sessions — use the orphan `media` branch, replaced every run so the repo stays small):
