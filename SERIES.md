@@ -33,6 +33,8 @@ Season mystery: who is signalling from the water tower, and why does the militar
 | S1E5 | Zombie Outbreak: The Hospital Where It Started | planned |
 | S1E6 | Zombie Outbreak: The Last Boat Out (season finale) | planned |
 
+LOCKED titles + thumbnail beats for the next episodes (incl. Season 2 "Winter"): see UPCOMING.md — it overrides this table.
+
 Planned beats (adapt freely, but keep continuity):
 - S1E2 (Day 31–60): You and Walter jump as the bridge falls; Walter hurts his leg. You reach the water tower on the WEST bank. The signaller is NORA (30s, radio engineer, glasses, yellow raincoat). The tank holds ~200,000 L of water — enough, but the ladder is the only way up and the infected learn to gather under it. Mystery: Nora's radio log mentions a second survivor group that answers only with a ferry horn. Cliffhanger: day 60, a ferry horn sounds three times from the harbor.
 - S1E3 (Day 61–90): Raft/boat trip to the harbor; abandoned ferry; supplies on board; the horn was automatic — or was it? Cliffhanger: a child's drawing of the water tower in the ferry cabin.
