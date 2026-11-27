@@ -5,7 +5,7 @@ that is Daniel's thumbnail: use it (resize to 1280x720 JPEG < 2 MB, no edits) in
 
 | Date | Ep | Title | Thumbnail beat / text | Status |
 |------|----|-------|------------------------|--------|
-| Fri 2026-11-27 | s1e4 | Zombie Outbreak: 30 Days Trapped In A Flooded Subway \| S1E4 | waist-deep black water in a subway tunnel, pale hands rising behind you and Walter — "DON'T SPLASH" / "DAY 120" | planned |
+| Fri 2026-11-27 | s1e4 | Zombie Outbreak: 30 Days Trapped In A Flooded Subway \| S1E4 | waist-deep black water in a subway tunnel, pale hands rising behind you and Walter — "DON'T SPLASH" / "DAY 120" | posted 2026-11-27 (6xByMmcbYEs) |
 | Mon 2026-11-30 | s1e5 | Zombie Outbreak: The Hospital Where It Started \| S1E5 | quarantine corridor, small child silhouette with a teddy at the end, infected behind glass — "PATIENT ZERO" / "DAY 150" | planned |
 | Tue 2026-12-01 | s1e6 | Zombie Outbreak: The Last Boat Out \| S1E6 (Season Finale) | night pier, last military boat leaving with searchlights, horde running down the pier, you holding the child's hand — "LAST BOAT" / "DAY 180" | planned |
 | Wed 2026-12-02 | s2e1 | Zombie Outbreak: 30 Days Trapped In A Ski Lodge \| S2E1 | blizzard, you at a frosted window, frozen infected standing still in the snow (they freeze in the cold and wake when warm) — "DON'T THAW" / "DAY 30" | planned |
